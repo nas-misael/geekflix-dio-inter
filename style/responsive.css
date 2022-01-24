@@ -1,0 +1,26 @@
+@media screen and (max-width: 700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo {
+        font-size: 20px;
+    }
+
+    .youtube-container{
+        aspect-ratio: 1 / 1;
+    }
+
+    .buttons {
+        justify-content: space-between;
+    }
+
+    .button {
+        padding: 10px;
+    }
+
+    .filme-principal .container {
+        width: 80%;
+    }
+}

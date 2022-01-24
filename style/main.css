@@ -1,0 +1,192 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: var(--preta);
+    font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+
+/* Filme Principal */
+.filme-principal {
+    font-size: 18px;
+    height: 100%;
+    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%);
+}
+
+.youtube-container {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    /* Keep it the right aspect-ratio */
+    aspect-ratio: 3 / 1;
+    /* No clicking/hover effects */
+    pointer-events: none;
+    
+} 
+
+.youtube-container iframe {
+    /* Extend it beyond the viewport... */
+    width: 500%;
+    height: 100%;
+    zoom: 2.5;
+    /* ...and bring it back again */
+    margin-left: -200%;
+}
+
+.filme-principal .container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 40%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 10;
+    pointer-events: all
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+.titulo {
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+}
+
+.descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+    
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.button {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: .3s ease all;
+    text-decoration: none;
+    
+}
+
+.button:hover {
+    background-color: #fff;
+    color: rgba(0,0,0,.50);
+}
+
+.button i {
+    margin-right: 6px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+#filmes {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+}
+
+.filmes {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.subtitle {
+    color: #E50914;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+}
+
+.pai, .filha {
+    border-bottom: 5px solid #E50914;
+}
+
+.pai {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 35px;
+}
+
+.filha {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    color: #fff;
+    margin-left: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: #353E48;
+    color: #FFF;
+    padding: 30px;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }
